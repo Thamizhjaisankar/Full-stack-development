@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>form</title>
+    <style>
+        body{
+            align-items: center;
+            justify-content: center;
+            line-height: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>REGISTRATION FORM</h1>
+    <form name="register-form" action="register.php" action="get">
+        <label>Login Id:</label>
+        <input type="text" name="username" ><br/><br/>
+        <label>Password :</label>
+        <input type="password" name="password" ><br/><br/>
+        <label>Dateof birth:</label>
+        <input type="date" name="date_of_birth" ><br/><br/>
+        <label>State:</label>
+        <select name="state">
+           <option value="tamilnadu">Tamilnadu</option>
+           <option value="odissa">odissa</option>
+           <option value="kerala">kerala</option>
+           <option value="karnataka">karnataka</option>
+        </select><br/><br/>
+        <br/><br/>
+        <label>Gender:</label><br/><br/>
+        Male<input type="radio" name="sex" value="male">
+        Female<input type="radio" name="sex" value="female" ><br/><br/>
+        <br/><br/>
+        <label>language:</label><br/><br/>
+        Tamil<input type="checkbox" name="Tamil" >
+        English<input type="checkbox" name="English" ><br/><br/>
+    </form>
+    
+</body>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <title>student registration form</title>
+    <style>
+        body{
+            background-color: rgb(150, 150, 197);
+        }
+        div{
+            margin-left: 600px;
+            font-size: 20px;
+        }
+        h1{
+            margin-left: 600px;
+            margin-top: 30px;
+        }
+        .button{
+            margin-left: 150px;
+        }
+        .reset{
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <div>
+    <form name="register-form" action="register.php" action="get"></form>
+        <label>Login Id :</label>
+        <input type="text" name="username" size="25"><br/> <br/>
+        <label>Password :</label>
+        <input type="password" name="password" size="25"><br/><br/>
+        <label>Dateof birth:</label>
+        <input type="date" name="date_of_birth" ><br/><br/>
+        <label>course:</label>
+        <select name="course">
+           <option value="Full stack ">Full stack</option>
+           <option value="Artificial Intelligence">Artificial Intelligence</option>
+           <option value="Cyber Security">Cyber Security</option>
+           <option value="Data Analyst">Data Analyst</option>
+        </select><br/><br/>
+        <label>Gender:</label><br/>
+        <input type="radio" name="sex" value="male">Male<br/>
+        <input type="radio" name="sex" value="female" >Female<br/><br/>
+        <label>language:</label><br/>
+        <input type="checkbox" name="Tamil" >Tamil<br/>
+        <input type="checkbox" name="English" >English<br/><br/>
+        <input type="text" size="2" name="country code" value="+91">
+        <input type="text" name="phone" size="10"><br/><br/>
+        <label name="address">Adress:</label><br/>
+        <textarea cols="50" rows="5" value="address"></textarea><br/><br/>
+        <input class="button" type="button" name="submit" value="submit">
+        <input class="reset" type="button" name="reset" value="reset">
+    </div>
+    </form>
+</body>
