@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            margin-top: 10%;
+            margin-left: 40%;
+            display: flex;
+            flex-direction: column;
+        }
+        .button{
+            height: 50px;
+            width: 200px;
+            background-color: rgb(69, 50, 87);
+            color: rgb(20, 20, 19);
+            border-radius: 20px;
+            border: none;
+            box-shadow: 10px 10px 120px 100px rgb(148, 46, 148);
+            cursor: pointer;
+            text-transform: lowercase;
+            transition: color 0.4s linear;
+            background-image:linear-gradient(to left, #16a085,#2ecc71,#f1c40f);
+            transition: 0.6s;
+            background-size: 180%;
+            margin-bottom: 200px;
+        }
+        .button:hover{
+            cursor: pointer;
+            color: rgb(180, 38, 83);
+            background-position: right;
+        }
+        .filter {
+            width: 220px;
+            height: 100px;
+            position: relative;
+            margin-bottom: 200px;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            background-color: rgb(53, 152, 201);
+            filter: drop-shadow(1px 1px 20px rgb(170, 33, 129));
+        }
+        .filter::before{
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: black;
+            transition: transform 2s;
+            transform-origin: 0 ;
+            transition-timing-function: cubic-bezier(10,30,50,60);
+            transform: scaleX(0);
+        }
+        .filter:hover::before{
+            transform: scaleX(1);
+        }
+        .box-shadow1{
+            height: 100px;
+            width: 220px;
+            box-shadow: 1px 1px 20px green;
+            position: relative;
+            background-image: linear-gradient(to left,#e74c3c,#e67e22,#f1c40f);
+            border: none;
+            transition: 0.6s;
+            background-size: 200%;
+        }
+       .box-shadow1::before{
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: rgb(17, 17, 15);
+            transition: transform 2s;
+            transform-origin: 0 0;
+            transition-timing-function: cubic-bezier(10,30,50,60);
+            transform: scaley(0);
+        }
+        .box-shadow1:hover::before{
+            transform: scaley(1);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="item">
+        <button class="button">CLICK ME!!</button>
+        <button class="filter">CLICK ME!!</button>
+        <button class="box-shadow1">click me!!</button>
+    </div>
+</body>
+</html>

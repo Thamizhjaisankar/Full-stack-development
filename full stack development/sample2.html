@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+<title> The website </title>
+<style>
+body{
+margin:0;
+align-items:vertical;
+vertical-align:top;
+}
+h1{
+background-color:red;
+padding:20px;
+margin:0;
+}
+.cards{
+display:inline-block;
+}
+.card{
+padding:20px;
+height:200px;
+width:200px;
+background-color:black;
+color:white;
+border-radius:20px;
+margin-top:30px;
+margin-left:30px;
+box-shadow:5px 5px 10px black;
+
+}
+.form-element{
+padding:20px;
+background-color:lightpink;
+margin:50px;
+border-radius:20px;
+}
+input,select,textarea{
+margin-left:5px;
+}
+.forms{
+display:inline-block;
+width:80%;
+margin-left:20px;
+vertical-align:top;
+}
+</style>
+</head>
+
+<body>
+<h1>The website</h1>
+<div class="cards">
+<div class=card>
+<p>The symposium organized by pits!</p>
+<p>author name:chen</p>
+<p>descriptions</p>
+<button style="background-color:red;border:none">Delete</button>
+</div>
+<div class=card>
+<p>The symposium organized by pits!</p>
+<p>author name:chen</p>
+<p>descriptions</p>
+<button style="background-color:red;border:none">Delete</button>
+</div>
+</div>
+<div class="forms">
+<form class="form-element">
+Name :<input type="text" placeholder="enter ur name here"><br/><br/>
+Dept:<select><br/><br/>
+<option>CSE</option>
+<option>ECE</option>
+<option>CIVIL</option>
+<option>IT</option>
+<option>MECH</option>
+<option>AERO</option>
+</select><br/><br/>
+College name:<textarea placeholder="type ur clg name"></textarea><br/><br/>
+No of events:<br/><br/><input type="radio" name="options" value="one" checked>One<br/><br/>
+<input type="radio" name="options" value="Two" >Two<br/><br/>
+<input type="radio"name="options" value="More than two" >More than two<br/><br/>
+<button style="background-color:blue;color:white;border:none">Add</button>
+<button style="background-color:red;color:white;border:none">Delete</button>
+</form>
+</div>
+</body>
